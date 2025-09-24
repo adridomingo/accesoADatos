@@ -16,4 +16,5 @@ public class Main {
         list2.removeIf((n) -> !n.toUpperCase().startsWith("M"));
         System.out.println(list2);
     }
+
 }
