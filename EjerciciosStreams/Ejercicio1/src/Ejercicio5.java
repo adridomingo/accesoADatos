@@ -25,7 +25,8 @@ public class Ejercicio5 {
         empleados.stream().filter(e -> e.getDepartamento().equalsIgnoreCase(dep)).forEach(System.out::println);
         System.out.println();
         String nombreEmp = "Samuel";
-        empleados.stream().map(Empleado::getNombre).filter(nombre -> nombre.equalsIgnoreCase(nombreEmp)).forEach(System.out::println);
+        empleados.stream().filter(nombre -> nombre.getNombre().equalsIgnoreCase(nombreEmp))
+                .map(Empleado::getDepartamento).forEach(System.out::println);
 
     }
 }
