@@ -7,12 +7,12 @@ public class ej4 {
         Pattern pattern = Pattern.compile(regex);
 
         String[] passwords = {
-                "Password123!",     // ✅ válida
-                "password123!",     // ❌ falta mayúscula
-                "PASSWORD123!",     // ❌ falta minúscula
-                "Password!!!",      // ❌ falta número
-                "Pass12!",          // ❌ menos de 8 caracteres
-                "Secure#2023"       // ✅ válida
+                "Password123!",
+                "password123!",
+                "PASSWORD123!",
+                "Password!!!",
+                "Pass12!",
+                "Secure#2023"
         };
 
         for (String pwd : passwords) {
