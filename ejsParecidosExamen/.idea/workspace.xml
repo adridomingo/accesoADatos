@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca7f6555-daac-4277-84e9-5811c262ca7c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/EjemploComparacion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/src/Modelo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/src/Modelo/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjemploComparacion/src/Modelo/TeacherNameComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/Ejemplos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/src/Fechas/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/src/Optional/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/src/Propiedades/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejemplos/src/Propiedades/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/EjerciciosUD1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/EjemploSalvajes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/EjerciciosUD1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/Modelo/Estudiante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/Modelo/Saludo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/Numeros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosUD1/src/StringsPorLongitud.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejsParecidosExamen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej10/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej10/Modelo/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej10/Util/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej10/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej4/Ej4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej4/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej4/Modelo/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej5/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej6/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej6/Modelo/Coche.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej6/Modelo/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej7/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej7/Modelo/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej8/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej8/Modelo/Cancion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej9/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej9/Modelo/Alumno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/descifrado.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/destinoCifrado.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/ficherosEjercicios.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/productos.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/Ejercicios/Ejercicio1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/Ejercicios/Ejercicio2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/Ejercicios/Ejercicio3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/Ejercicios/Ejercicio4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/Ejercicios/Ejercicio5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/Ejercicios/Ejercicio6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/Modelo/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/ej1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/ej2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/ej3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/src/ej5.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ficherosEjercicios/texto.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="33muoxqcepjOzwGIna3DDIniyIX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dam2/Documents/repositoriosDAM2/accesoADatos/ejsParecidosExamen/src/Ej7&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/dam2/Documents/repositoriosDAM2/accesoADatos/ejsParecidosExamen/src/Main.java&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dam2\Documents\repositoriosDAM2\accesoADatos\ejsParecidosExamen\src\Ej7" />
+      <recent name="C:\Users\dam2\Documents\repositoriosDAM2\accesoADatos\ejsParecidosExamen\src\Ej4" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca7f6555-daac-4277-84e9-5811c262ca7c" name="Changes" comment="" />
+      <created>1759934746794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759934746794</updated>
+    </task>
+    <servers />
+  </component>
+</project>
