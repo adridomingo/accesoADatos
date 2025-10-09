@@ -35,7 +35,7 @@ public class Main {
         listaAlumnos.stream().filter(a -> a.getApellidos().startsWith("L") || a.getApellidos().startsWith("G"))
                 .forEach(System.out::println);
 
-        int num = Math.toIntExact(listaAlumnos.stream().count());
+        System.out.println(listaAlumnos.stream().count());
 
         listaAlumnos.stream().filter(n -> n.getNota()>9 && n.getNombreCurso().equals("PHP"))
                 .forEach(System.out::println);
@@ -53,16 +53,14 @@ public class Main {
                 .orElse(null);
         System.out.println("Mayor edad: " + mayorEdad);
 
-        System.out.println("Primer alumno: " + listaAlumnos.stream().findFirst().toString());
+        System.out.println("Primer alumno: " + listaAlumnos.stream().findFirst());
 
         listaAlumnos.stream().filter(alumno -> alumno.getNombreCurso().contains("A")).forEach(System.out::println);
 
         listaAlumnos.stream().filter(alumno -> alumno.getNombre().length() > 10).forEach(System.out::println);
 
-
-
         List<Alumno> listNueva =         listaAlumnos.stream().filter(alumno -> alumno.getNombreCurso().
-                        startsWith("P") && alumno.getNombreCurso().length() >= 6).toList();
+                        startsWith("P") && alumno.getNombre().length() >= 6).toList();
 
     }
 }
