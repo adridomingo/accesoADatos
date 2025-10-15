@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: http://localhost:8080/saludo
+  url: http://localhost:8080/buscar?nombre=jose
   body: none
   auth: inherit
+}
+
+params:query {
+  nombre: jose
 }
