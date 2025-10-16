@@ -1,6 +1,7 @@
 package org.iesch.ad.primerSpring.controlador;
 
 import org.iesch.ad.primerSpring.services.Utils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,6 +11,9 @@ import java.util.Map;
 
 @RestController
 public class MiPrimerController {
+
+    @Autowired
+    Utils utils;
 
     @GetMapping("/saludo")
     public String saludo() {
@@ -24,7 +28,6 @@ public class MiPrimerController {
 
     @GetMapping("/buscar")
     public Map<String, String> buscar(@RequestParam("nombre") String nombre) {
-        Utils utils = new Utils();
         String nombreMayus = utils.transformarMayus(nombre);
         Map<String,String>map = Map.of("Saludo" , "Buscamos a " + nombreMayus);
         return map;
