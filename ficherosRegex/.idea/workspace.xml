@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7f6555-daac-4277-84e9-5811c262ca7c" name="Changes" comment="" />
+    <list default="true" id="250f0757-c3be-450e-9d7c-0d1a41fe6c70" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ej5.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,47 +22,50 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "adridomingo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;adridomingo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/adridomingo/accesoADatos.git",
-    "accountId": "15642c7f-9501-4106-8511-f03f3448b1c0"
-  }
-}]]></component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="33muoxqcepjOzwGIna3DDIniyIX" />
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/adridomingo/accesoADatos.git&quot;,
+    &quot;accountId&quot;: &quot;15642c7f-9501-4106-8511-f03f3448b1c0&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="33SX0aBKQ5N9XJBna485Ot8pvhn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Ejercicio1.executor": "Run",
+    "Application.ej2.executor": "Run",
+    "Application.ej3.executor": "Run",
+    "Application.ej4.executor": "Run",
+    "Application.ej5.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dam2/Documents/repositoriosDAM2/accesoADatos/ejsParecidosExamen/src/Ej7",
-    "onboarding.tips.debug.path": "C:/Users/dam2/Documents/repositoriosDAM2/accesoADatos/ejsParecidosExamen/src/Main.java",
+    "last_opened_file_path": "C:/Users/adrid/OneDrive/Documentos/repositoriosDAM2/accesoADatos/ficherosRegex",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/adrid/OneDrive/Documentos/repositoriosDAM2/accesoADatos/ficherosRegex/src/Main.java",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dam2\Documents\repositoriosDAM2\accesoADatos\ejsParecidosExamen\src\Ej7" />
-      <recent name="C:\Users\dam2\Documents\repositoriosDAM2\accesoADatos\ejsParecidosExamen\src\Ej4" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,12 +76,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ca7f6555-daac-4277-84e9-5811c262ca7c" name="Changes" comment="" />
-      <created>1759934746794</created>
+      <changelist id="250f0757-c3be-450e-9d7c-0d1a41fe6c70" name="Changes" comment="" />
+      <created>1759311225788</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1759934746794</updated>
-      <workItem from="1761126651274" duration="17000" />
+      <updated>1759311225788</updated>
+      <workItem from="1759311227217" duration="2243000" />
+      <workItem from="1759919534870" duration="3709000" />
+      <workItem from="1760001663897" duration="894000" />
     </task>
     <servers />
   </component>

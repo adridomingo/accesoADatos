@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7f6555-daac-4277-84e9-5811c262ca7c" name="Changes" comment="" />
+    <list default="true" id="64fe5c87-31e1-4163-9c32-cfcbddb62452" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../filtradoListas/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../filtradoListas/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -32,10 +27,10 @@
     "accountId": "15642c7f-9501-4106-8511-f03f3448b1c0"
   }
 }]]></component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="33muoxqcepjOzwGIna3DDIniyIX" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="337VmItZTYFx3nPowDeXtZXOxXJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,18 +44,16 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dam2/Documents/repositoriosDAM2/accesoADatos/ejsParecidosExamen/src/Ej7",
-    "onboarding.tips.debug.path": "C:/Users/dam2/Documents/repositoriosDAM2/accesoADatos/ejsParecidosExamen/src/Main.java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/adrid/OneDrive/Documentos/repositoriosDAM2/accesoADatos/filtrarImpares/src/Main.java",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dam2\Documents\repositoriosDAM2\accesoADatos\ejsParecidosExamen\src\Ej7" />
-      <recent name="C:\Users\dam2\Documents\repositoriosDAM2\accesoADatos\ejsParecidosExamen\src\Ej4" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,12 +64,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ca7f6555-daac-4277-84e9-5811c262ca7c" name="Changes" comment="" />
-      <created>1759934746794</created>
+      <changelist id="64fe5c87-31e1-4163-9c32-cfcbddb62452" name="Changes" comment="" />
+      <created>1758668263912</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1759934746794</updated>
-      <workItem from="1761126651274" duration="17000" />
+      <updated>1758668263912</updated>
+      <workItem from="1758668265219" duration="328000" />
     </task>
     <servers />
   </component>

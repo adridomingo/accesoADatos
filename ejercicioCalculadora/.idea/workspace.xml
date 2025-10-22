@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7f6555-daac-4277-84e9-5811c262ca7c" name="Changes" comment="" />
+    <list default="true" id="2443bb4e-8cfb-4744-acc3-c8086e5ff1ee" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,10 +32,10 @@
     "accountId": "15642c7f-9501-4106-8511-f03f3448b1c0"
   }
 }]]></component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="33muoxqcepjOzwGIna3DDIniyIX" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="32xhQsrmWOjmIxvsrosKZi2ZFuQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,18 +49,16 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dam2/Documents/repositoriosDAM2/accesoADatos/ejsParecidosExamen/src/Ej7",
-    "onboarding.tips.debug.path": "C:/Users/dam2/Documents/repositoriosDAM2/accesoADatos/ejsParecidosExamen/src/Main.java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/adrid/OneDrive/Documentos/repositoriosDAM2/accesoADatos/ejercicioCalculadora/src/Main.java",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dam2\Documents\repositoriosDAM2\accesoADatos\ejsParecidosExamen\src\Ej7" />
-      <recent name="C:\Users\dam2\Documents\repositoriosDAM2\accesoADatos\ejsParecidosExamen\src\Ej4" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,12 +69,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ca7f6555-daac-4277-84e9-5811c262ca7c" name="Changes" comment="" />
-      <created>1759934746794</created>
+      <changelist id="2443bb4e-8cfb-4744-acc3-c8086e5ff1ee" name="Changes" comment="" />
+      <created>1758368121494</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1759934746794</updated>
-      <workItem from="1761126651274" duration="17000" />
+      <updated>1758368121494</updated>
+      <workItem from="1758368122649" duration="727000" />
     </task>
     <servers />
   </component>

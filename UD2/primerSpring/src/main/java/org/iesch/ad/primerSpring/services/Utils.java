@@ -43,4 +43,6 @@ public class Utils {
     public float conTemperaturas(float temperatura) {
         return (temperatura * 9 / 5) + 32;
     }
+
+
 }
