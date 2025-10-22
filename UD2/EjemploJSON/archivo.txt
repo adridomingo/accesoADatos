@@ -1,0 +1,2 @@
+Persona(nombre=Juanma, apellidos=Moreno)
+Persona(nombre=Ana, apellidos=Lopez)

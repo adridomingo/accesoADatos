@@ -1,0 +1,18 @@
+meta {
+  name: guardaNombreApellidos
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/multiplicacion
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "operando1": 5,
+    "operando2": 10
+  } 
+}
