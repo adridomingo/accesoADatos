@@ -1,0 +1,21 @@
+meta {
+  name: updateOne
+  type: http
+  seq: 4
+}
+
+post {
+  url: http:localhost:8080/addProducto
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Pizza",
+    "price": 5.25,
+    "description": "Pizza",
+    "category": "ali,entacion",
+    "stock": 10
+  }
+}

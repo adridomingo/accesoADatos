@@ -1,6 +1,7 @@
 package org.iesch.ad.ResProductos.config;
 
 import org.iesch.ad.ResProductos.modelo.Product;
+import org.iesch.ad.ResProductos.modelo.Usuario;
 import org.springframework.context.annotation.Bean;
 
 import java.util.ArrayList;
@@ -21,5 +22,12 @@ public class Configuration {
         products.put(5L,Product.builder().id(5).name("Aceite Oliva").category("Alimentacion").price(8.26).description("aceite virgen extra").stock(10).build());
 
         return products;
+    }
+
+    @Bean
+    public Map<Long, Usuario> initUsuarios() {
+        Map<Long, Usuario> usuarios = new HashMap<>();
+        usuarios.put(1L, Usuario.builder().id(1).nombre("Jose").apellido("Lopez").direccion("Casa").password("1234").build());
+        return usuarios;
     }
 }
