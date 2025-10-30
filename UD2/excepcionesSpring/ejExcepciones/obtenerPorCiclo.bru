@@ -1,0 +1,21 @@
+meta {
+  name: obtenerPorCiclo
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:8080/api/estudiantes/ciclo/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre": "Jose",
+    "apellidos": "Gutierrez",
+    "email": "jose@iesch.org",
+    "edad": 20,
+    "ciclo": "DAM"
+  }
+}
