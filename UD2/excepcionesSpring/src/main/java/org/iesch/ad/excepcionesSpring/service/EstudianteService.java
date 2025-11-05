@@ -9,6 +9,8 @@ import org.iesch.ad.excepcionesSpring.modelo.dto.EstudianteRequestDTO;
 import org.iesch.ad.excepcionesSpring.modelo.dto.EstudianteResponseDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +22,8 @@ public class EstudianteService {
     @Autowired
     Map<Long, Estudiante> estudiantes;
 
+    @GetMapping
+    //@CrossOrigin(origins = "http://localhost")
     public List<EstudianteResponseDTO> obtenerTodos() {
         List<Estudiante> listaEstudiantes = new ArrayList<>(estudiantes.values());
         List<EstudianteResponseDTO> estudianteResponseDTOS =
