@@ -1,0 +1,22 @@
+meta {
+  name: guardarCoche
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/coches
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "marca":"VW",
+      "modelo":"Golf RS6",
+      "matricula": "1999 - FNZ",
+      "cilindrada": 2200.0,
+      "potencia": 325,
+      "color" : "Azul"
+  }
+}

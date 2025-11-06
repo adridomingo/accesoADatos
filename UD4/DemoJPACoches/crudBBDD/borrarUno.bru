@@ -1,0 +1,11 @@
+meta {
+  name: borrarUno
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:8080/api/coches/3
+  body: json
+  auth: inherit
+}

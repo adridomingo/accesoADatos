@@ -1,0 +1,21 @@
+meta {
+  name: obtenerUno
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/api/coches/5
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "marca":"BMW",
+      "modelo":"Serie 3",
+      "matricula": "1999 - FNZ",
+      "cilindrada": "2200.0",
+      "potencia": 179
+  }
+}
