@@ -51,6 +51,23 @@ public class JdbcTemplateRepositorio {
 
     }
 
+    // Buscar libros por precio y año, usa varios parametros y BETWEEN
+    public List<Libro> findLibrosByPrecioYAnio(double precioMin, double precioMax, int anio) {
+
+        String sql = """
+                SELECT l.id, l.titulo, l.isbn, l.precio, l.anio_publicacion,
+                a.id as autor_id, a.nombre, a.apellido, a.nacionalidad
+                FROM libros l
+                INNER JOIN autores a ON l.autor_id=a.id
+                WHERE l.precio BETWEEN ? AND ?
+                AND l.anio_publicacion >= ?
+                ORDER BY l.precio DESC, l.anio_publicacion DESC 
+                """;
+        return jdbcTemplate.query(sql, new LibroConAutorRowMapper(), precioMin, precioMax, anio);
+
+    }
+
+
     // RowMapper para mapear ResultSet a objeto LibroAutor
 
     private static  class LibroConAutorRowMapper implements RowMapper<Libro> {

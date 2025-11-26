@@ -46,5 +46,20 @@ public class JdbcService {
                     );
         });
 
+        System.out.println("... Libros por rango de precio y año");
+        System.out.println("... Libros entre 12 y 18€ publicados desde 1960");
+        System.out.println("-".repeat(50));
+
+        List<Libro> librosCaros = jdbcTemplateRepositorio.findLibrosByPrecioYAnio(12.0, 18.0, 1960);
+        librosCaros.forEach(libro -> System.out.printf(" '%s' - %.2f€ (%d) por %s %s%n",
+                libro.getTitulo(),
+                libro.getPrecio(),
+                libro.getAnioPublicacion(),
+                libro.getAutor().getNombre(),
+                libro.getAutor().getApellido()
+                ));
+
+        System.out.printf("\n FIN");
+
     }
 }
