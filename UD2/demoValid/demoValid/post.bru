@@ -1,0 +1,18 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/usuarios
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre" : "",
+    "email" : "juan@gmail.com"
+  }
+}
