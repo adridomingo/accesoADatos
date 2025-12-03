@@ -1,16 +1,12 @@
 package org.iesch.ad.DemoJPACoches.modelo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Entity
 public class Coche {
     @Id
@@ -22,4 +18,22 @@ public class Coche {
     private float cilindrada;
     private int potencia;
     private String color;
+
+
+    @ManyToOne
+    Persona persona;
+
+    @Override
+    public String toString() {
+        return "Coche{" +
+                "id=" + id +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", matricula='" + matricula + '\'' +
+                ", cilindrada=" + cilindrada +
+                ", potencia=" + potencia +
+                ", color='" + color + '\'' +
+                ", personaID=" + persona.getId() +
+                '}';
+    }
 }

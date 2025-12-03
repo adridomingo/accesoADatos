@@ -47,4 +47,19 @@ public class CocheControlador {
         return ResponseEntity.notFound().build();
     }
 
+    @GetMapping("/buscaporcolor/{color}")
+    public ResponseEntity<List<Coche>> obtenerPorColor(@PathVariable String color) {
+        return ResponseEntity.ok(cocheService.obtenerPorColor(color));
+    }
+
+    @GetMapping("/buscaporcolorymarca/{color}/{marca}")
+    public ResponseEntity<List<Coche>> obtenerPorColorYMarca(@PathVariable String color, @PathVariable String marca) {
+        return ResponseEntity.ok(cocheService.obtenerPorColorYMarca(color, marca));
+    }
+
+    @GetMapping("/buscaporcolorymarcaypotenciamenor/{color}/{marca}/{potencia}")
+    public ResponseEntity<List<Coche>> obtenerPorColorYMarcaYPotencia(@PathVariable String color, @PathVariable String marca, @PathVariable int potencia) {
+        return ResponseEntity.ok(cocheService.obtenerPorColorYMarcaYPotencia(color, marca, potencia));
+    }
+
 }
