@@ -1,0 +1,15 @@
+meta {
+  name: librosPorEditorial
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8080/api/librosPorEditorial?editorial=Editorial Planeta
+  body: none
+  auth: inherit
+}
+
+params:query {
+  editorial: Editorial Planeta
+}

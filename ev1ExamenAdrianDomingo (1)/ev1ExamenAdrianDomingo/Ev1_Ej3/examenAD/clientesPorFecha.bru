@@ -1,0 +1,15 @@
+meta {
+  name: clientesPorFecha
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/api/clientesPorFecha?fecha=2023-01-01
+  body: none
+  auth: inherit
+}
+
+params:query {
+  fecha: 2023-01-01
+}
