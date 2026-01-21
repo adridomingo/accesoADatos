@@ -353,9 +353,110 @@
                 $group: {
                     _id: "$usuario_id",
                     total_prestamos: {$sum:1},
+                    prestamos_activos: {
+                        $sum: {$cond: [{$eq: ["$devuelto", false]}, 1,0]}
+                    }
                 }
+            },
+            {
+                $match: {total_prestamos: {$gt: 1}}
+            },
+            {
+                $lookup: {
+                    from: "usuarios",
+                    localField: "_id",
+                    foreignField: "_id",
+                    as: "usuario"
+                }
+            },
+            {$unwind: "$usuario"},
+            {
+                $project: {
+                    "usuario.nombre":1,
+                    "usuario.email":1,
+                    "total_prestamos":1,
+                    "prestamos_activos":1,
+                    "_id":0
+                }
+            },
+            {
+                $sort: {total_prestamos:-1}
             }
         ])
 ####    17. Muestra la editorial con el libro más largo y su autor
-
+        db.libros.aggregate([
+            {
+                $sort:{paginas: -1}
+            },
+            {
+                $limit: 1
+            },
+            {
+                $lookup: {
+                    from: "autores",
+                    localField: "autor_id",
+                    foreignField: "_id",
+                    as: "autor"
+                }
+            },
+            {
+                $unwind: "$autor"
+            },
+            {
+                $lookup: {
+                    from: "editoriales",
+                    localField: "editorial_id",
+                    foreignField: "_id",
+                    as: "editorial"
+                }
+            },
+            {
+                $unwind: "$editorial"
+            },
+            {
+                $project: {
+                    "titulo":1,
+                    "paginas":1,
+                    "autor.nombre":1,
+                    "autor.nacionalidad":1,
+                    "editorial.nombre":1,
+                    "editorial.pais":1,
+                    "_id":0,
+                }
+            },
+        ])
 ####    18. Encuentra los libros que nunca han sido prestados.
+        db.libros.aggregate([
+            {
+                $lookup: {
+                    from: "prestamos",
+                    localField: "_id",
+                    foreignField: "libro_id",
+                    as: "prestamo"
+                }
+            },
+            {
+                $match: {
+                    prestamo:{$size:0}
+                }
+            },
+            {
+                $lookup: {
+                    from: "autores",
+                    localField: "autor_id",
+                    foreignField: "_id",
+                    as: "autor"
+                }
+            },
+            {
+                $unwind: "$autor"
+            },
+            {
+                $project: {
+                    "titulo":1,
+                    "autor.nombre":1,
+                    "año_publicacion":1,
+                    "_id":0
+                }
+            }
+        ])
