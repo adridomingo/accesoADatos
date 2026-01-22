@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "mongo1",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,30 +1,28 @@
 package org.iesch.MongoDemo_Repository.modelo;
 
-import lombok.*;
-import org.springframework.data.annotation.Id;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
 @Document
 @NoArgsConstructor
-//@AllArgsConstructor
 @Getter
 @Setter
 @ToString
 public class Book {
-    @Id
-    private String id;
-    private String titulo;
-    private String isbn;
-    private Integer anioPublicacion;
-    private Double precio;
-    private Integer numeroPaginas;
-    private String editorial;
-
-    // EMBEBIDOS
-    private List<Autor> autores;
-    private List<String> categorias;
+    String id;
+    String titulo;
+    String isbn;
+    Integer anioPublicacion;
+    Double precio;
+    Integer numeroPaginas;
+    String editorial;
+    List<Autor> autores;
+    List<String> categorias;
 
     public Book(String titulo, String isbn, Integer anioPublicacion, Double precio, Integer numeroPaginas, String editorial, List<Autor> autores, List<String> categorias) {
         this.titulo = titulo;
