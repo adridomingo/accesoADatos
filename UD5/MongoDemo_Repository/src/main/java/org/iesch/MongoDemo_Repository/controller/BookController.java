@@ -69,7 +69,7 @@ public class BookController {
         return ResponseEntity.ok(bookRepository.findByAutoresNombre(nombre));
     }
 
-    @GetMapping("/search/autor")
+    @GetMapping("/search/autornacionalidad")
     public ResponseEntity<List<Book>> buscarPorNacionalidadAutor(@RequestParam String nacionalidad){
         return ResponseEntity.ok(bookRepository.findByAutoresNacionalidad(nacionalidad));
     }

@@ -28,4 +28,6 @@ public interface BookRepository extends MongoRepository<Book, String> {
 
     @Query("{'precio': {$lt: ?0}, 'anioPublicacion': {$gte: ?1}}")
     List<Book> buscarPorPrecioInferiorYanioMayor(Double precio, Integer anio);
+
+
 }
