@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "documentosReferenciados",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
