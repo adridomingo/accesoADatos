@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
 
@@ -21,6 +22,8 @@ public class Book {
     Double precio;
     Integer numeroPaginas;
     String editorial;
+
+    @DocumentReference
     List<Autor> autores;
     List<String> categorias;
 

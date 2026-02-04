@@ -32,7 +32,7 @@ public class AutorRefController {
     @PostMapping
     public ResponseEntity<AutoresRef> crearAutor(@RequestBody AutoresRef autor) {
         AutoresRef autoresRef = autoresRepository.save(autor);
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+        return ResponseEntity.status(HttpStatus.CREATED).body(autoresRef);
     }
 
     @PutMapping("/{id}")
@@ -52,6 +52,21 @@ public class AutorRefController {
         }
         autoresRepository.deleteById(id);
         return ResponseEntity.ok(HttpStatus.NO_CONTENT);
+    }
+
+    @GetMapping("/search/nombre")
+    public ResponseEntity<List<AutoresRef>> buscarPorNombre(@RequestParam String nombre) {
+        return ResponseEntity.ok(autoresRepository.findByNombreContainingIgnoreCase(nombre));
+    }
+
+    @GetMapping("/search/nacionalidad")
+    public ResponseEntity<List<AutoresRef>> buscarPorNacionalidad(@RequestParam String nacionalidad) {
+        return ResponseEntity.ok(autoresRepository.findByNacionalidadContainingIgnoreCase(nacionalidad));
+    }
+
+    @PostMapping("/search/nacionalidades")
+    public ResponseEntity<List<AutoresRef>> buscarPorNacionalidades(@RequestBody List<String> paises) {
+        return ResponseEntity.ok(autoresRepository.findByNacionalidadIn(paises));
     }
 
 }

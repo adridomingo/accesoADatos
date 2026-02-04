@@ -1,0 +1,30 @@
+meta {
+  name: deleteBook
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:8080/api/libros/69836e00f0f3c76e09e77a65
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "titulo": "El Arte de La Guerra",
+    "isbn": "978-978654321",
+    "anioPublicacion": 1585,
+    "precio": 22.0,
+    "numeroPaginas": 200,
+    "editorial": "Clasicos",
+    "autores": [
+      {
+        "id": "69837030748484367a417ecf"
+      }
+    ],
+    "categorias": [
+      "Historia"
+    ]
+  }
+}

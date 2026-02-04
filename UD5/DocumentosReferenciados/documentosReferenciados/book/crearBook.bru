@@ -1,0 +1,30 @@
+meta {
+  name: crearBook
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/libros/crear
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "titulo": "El Arte de Dormir",
+    "isbn": "978-978654321",
+    "anioPublicacion": 1585,
+    "precio": 22.0,
+    "numeroPaginas": 200,
+    "editorial": "Clasicos",
+    "autores": [
+      {
+        "id": "123456789"
+      }
+    ],
+    "categorias": [
+      "Historia"
+    ]
+  }
+}

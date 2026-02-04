@@ -4,6 +4,7 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class BookRef {
     private Integer numeroPaginas;
     private String editorial;
 
-    @DBRef
+    @DocumentReference
     private List<AutoresRef> autores;
     private List<String> categorias;
 

@@ -32,7 +32,7 @@ public class BookRefController {
     @PostMapping("/crear")
     public ResponseEntity<BookRef> crearBook(@RequestBody BookRef book) {
         BookRef books = bookRepository.save(book);
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+        return ResponseEntity.status(HttpStatus.CREATED).body(books);
     }
 
     @PutMapping("/{id}")
@@ -52,6 +52,16 @@ public class BookRefController {
         }
         bookRepository.deleteById(id);
         return ResponseEntity.ok(HttpStatus.NO_CONTENT);
+    }
+
+    @GetMapping("/search/{autorId}")
+    public ResponseEntity<List<BookRef>> buscarLibrosPorIdAutor(@PathVariable String id) {
+        return ResponseEntity.ok(bookRepository.findByAutoresId(id));
+    }
+
+    @GetMapping("/search/precio-anio")
+    public ResponseEntity<List<BookRef>> buscarPorPrecioMenorYAñoSuperior(@RequestParam Double precio, @RequestParam Integer anio) {
+        return ResponseEntity.ok(bookRepository.buscarPorPrecioInferiorYanioSuperior(precio, anio));
     }
 
 }
