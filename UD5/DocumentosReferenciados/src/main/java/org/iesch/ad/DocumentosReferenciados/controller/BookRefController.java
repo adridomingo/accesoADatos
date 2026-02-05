@@ -64,4 +64,11 @@ public class BookRefController {
         return ResponseEntity.ok(bookRepository.buscarPorPrecioInferiorYanioSuperior(precio, anio));
     }
 
+    @GetMapping("/search/economicos-antiguos")
+    public ResponseEntity<List<BookRef>> buscarEconomicosAntiguos(@RequestParam Double precio, @RequestParam Integer anio) {
+        return ResponseEntity.ok(bookRepository.buscarLibrosEconomicosOAntiguos(precio, anio));
+    }
+
+
+
 }
