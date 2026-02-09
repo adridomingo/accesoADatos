@@ -103,21 +103,190 @@
             $expr : {$gte : [{$size : "$estudiantes"}, 3]}
         })
 #####   31. Buscar cursos con promedio de valoración mayor o igual a 4.5
-        
+        db.cursos.find({
+                "promedio_valoracion" : {$gte: 4.5}
+        })
 #####   32. Buscar cursos con valoración perfecta (5.0)
-
+        db.cursos.find({
+                "promedio_valoracion" : 5
+        })
 #####   33. Buscar cursos donde Ana López haya dejado una valoración
-
+        db.cursos.find({
+                "valoraciones.nombre" : "Ana López"
+        })
 #####   34. Buscar cursos con al menos una valoración de 5 estrellas
-
+        db.cursos.find({
+                "valoraciones.puntuacion" : 5
+        })
 #####   35. Buscar cursos donde alguna valoración tenga más de 10 votos útiles
-
+        db.cursos.find({
+                "valoraciones.util_votos" : {$gt: 10}
+        })
 #####   36. Buscar cursos SIN valoraciones
-
+        db.cursos.find({
+                "valoraciones" : []
+        })
 #####   37. Proyección: Mostrar título y comentarios de valoraciones
-
+        db.cursos.find(
+                {},
+                {
+                        _id:0,
+                        titulo:1,
+                        "valoraciones.comentario":1
+                }
+        )
 #####   38. Buscar cursos con más de 2 valoraciones
-
+        db.cursos.find({
+                $expr: {
+                        $gt: [ { $size: "$valoraciones" }, 2 ]
+                }
+        })
 #####   39. Buscar cursos donde alguna valoración sea menor a 4 estrellas
-
+        db.cursos.find({
+                "valoraciones.puntuacion" : {$lt : 4}
+        })
 #####   40. Buscar cursos creados en 2024
+        db.cursos.find({
+                fecha_creacion: {
+                        $gte: ISODate("2024-01-01T00:00:00Z"),
+                        $lt:  ISODate("2025-01-01T00:00:00Z")
+                }
+        })
+
+####   NIVEL 5: AGREGACIONES AVANZADAS
+#####   41. Contar cursos por categoría
+        db.cursos.aggregate([
+                {
+                        $group: {
+                                _id: "$categoria",
+                                total_cursos: { $sum: 1 }
+                        }
+                }
+        ])
+#####   42. Calcular el precio promedio de los cursos
+        db.cursos.aggregate([
+                {
+                        $group: {
+                                _id: null,
+                                promedio_cursos : {$avg : "$precio"}
+                        }
+                }
+        ])
+#####   43. Encontrar el curso más caro
+        db.cursos.aggregate([
+                {
+                        $sort: {precio:-1}
+                },
+                {
+                        $limit:1
+                },
+                {
+                        $project: {
+                                _id:0,
+                                titulo:1,
+                                precio:1
+                        }
+                }
+        ])
+#####   44. Listar instructores y cuántos cursos imparten
+        db.cursos.aggregate([
+                {
+                        $group: {
+                                _id: "$instructor",
+                                cursos_impartidos: {$sum:1}
+                        }
+                }
+        ])
+#####   45. Calcular el total de estudiantes de todos los cursos (suma)
+        db.cursos.aggregate([
+                {
+                        $group: {
+                                _id: null,
+                                total_estudiantes : {$sum : "$total_estudiantes"}
+                        }
+                }
+        ])
+#####   46. Desenrollar módulos y contar total de lecciones por curso
+        db.cursos.aggregate([
+                { $unwind: "$modulos" },
+                { $unwind: "$modulos.lecciones" },
+                {
+                        $group: {
+                        _id: "$titulo",
+                        total_lecciones: { $sum: 1 }
+                        }
+                }
+        ])
+#####   47. Encontrar los 3 estudiantes más activos (más cursos inscritos)
+                db.cursos.aggregate([
+                        { $unwind: "$estudiantes" },
+                        { 
+                                $group: {
+                                _id: "$estudiantes.id_estudiante",
+                                nombre: { $first: "$estudiantes.nombre" },
+                                cursos_inscritos: { $sum: 1 }
+                                }
+                        },
+                        { $sort: { cursos_inscritos: -1 } },
+                        { $limit: 3 },
+                        {
+                                $project: {
+                                        _id: 0,
+                                        id_estudiante: "$_id",
+                                        nombre: 1,
+                                        cursos_inscritos: 1
+                                }
+                        }
+                ])
+#####   48. Calcular el progreso promedio de estudiantes por curso
+        db.cursos.aggregate([
+                {$unwind : "$estudiantes"},
+                {
+                        $group: {
+                                _id: "$titulo",
+                                promedio_estudiantes : {$avg : "$estudiantes.progreso_porcentaje"}
+                        }
+                },
+                {
+                        $project : {
+                                _id:0,
+                                curso:"$_id",
+                                promedio_estudiantes:1
+                        }
+                }
+        ])
+#####   49. Contar lecciones por tipo (video, practica, proyecto)
+        db.cursos.aggregate([
+                {$unwind : "$modulos"},
+                {$unwind : "$modulos.lecciones"},
+                {
+                        $group : {
+                                _id:"$modulos.lecciones.tipo",
+                                lecciones_contadas: {$sum:1}
+                        }
+                },
+                {
+                        $project : {
+                                _id:0,
+                                tipo: "$_id",
+                                lecciones_contadas:1
+                        }
+                }
+        ])
+#####   50. Curso con mejor engagement (fórmula: total_estudiantes * promedio_valoracion)
+        db.cursos.aggregate([
+                {
+                        $project: {
+                        titulo: 1,
+                        total_estudiantes: 1,
+                        promedio_valoracion: 1,
+                        engagement: { $multiply: ["$total_estudiantes", "$promedio_valoracion"] }
+                }
+                },
+                {
+                        $sort: { engagement: -1 }
+                },
+                {
+                        $limit: 1
+                }
+        ])
