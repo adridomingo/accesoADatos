@@ -229,15 +229,114 @@
         ])
 
 ####    18.- Calcular el progreso promedio de los estudiantes por curso
-
+        db.matriculas.aggregate([
+            {
+                $group: {
+                    _id:"$curso_id",
+                    promedio: {$avg : "$progreso"}
+                }
+            },
+            {
+                $lookup: {
+                    from: "cursos",
+                    localField: "_id",
+                    foreignField: "_id",
+                    as: "curso"
+                }
+            },
+            {$unwind: "$curso"},
+            {
+                $project: {
+                    _id:0,
+                    "curso.titulo":1,
+                    "promedio":1
+                }
+            }
+        ])
 ####    19.- Mostrar cursos con duración mayor a 50 horas con su instructor
-
+        db.cursos.aggregate([
+            {
+                $match: {
+                    "duracion_horas" : {$gt: 50}
+                }
+            },
+            {
+                $lookup: {
+                    from: "instructores",
+                    localField: "instructor_id",
+                    foreignField: "_id",
+                    as: "instructor"
+                }
+            },
+            {$unwind: "$instructor"},
+            {
+                $project: {
+                    _id:0,
+                    "titulo":1,
+                    "instructor.nombre":1
+                }
+            }
+        ])
 
 ####    20.- Encontrar cursos que nunca han tenido matrículas
-
+        db.cursos.aggregate([
+            {
+                $lookup: {
+                    from: "matriculas",
+                    localField: "_id",
+                    foreignField: "curso_id",
+                    as: "matricula"
+                }
+            },
+            {
+                $match : {matricula : {$size : 0}}
+            },
+            {
+                $project: {
+                    _id:0,
+                    "titulo":1,
+                }
+            }
+        ])
 
 ####    21.- Mostrar estudiantes de nivel intermedio con sus cursos activos
-
+        db.estudiantes.aggregate([
+            {
+                $match: { nivel: "intermedio" }
+            },
+            {
+                $lookup: {
+                    from: "matriculas",
+                    localField: "_id",
+                    foreignField: "estudiante_id",
+                    as: "matriculas"
+                }
+            },
+            {
+                $unwind: "$matriculas"
+            },
+            {
+                $match: { "matriculas.completado": false }
+            },
+            {
+                $lookup: {
+                    from: "cursos",
+                    localField: "matriculas.curso_id",
+                    foreignField: "_id",
+                    as: "curso"
+                }
+            },
+            { $unwind: "$curso" },
+            {
+                $project: {
+                    "nombre": 1,
+                    "ciudad": 1,
+                    "curso.titulo": 1,
+                    "matriculas.progreso": 1,
+                    _id: 0
+                }
+            }
+        ])
 
 ####    22.- Calcular el total de horas de cursos ofrecidos por cada instructor
 

@@ -15,9 +15,9 @@ public class MultaController {
     @Autowired
     VehicleService vehicleService;
 
-    @PutMapping("{matricula}/multas")
-    public ResponseEntity<?> pagarMulta(@PathVariable String matricula) {
-        vehicleService.pagarMulta(matricula, )
-    }
+//    @PutMapping("{matricula}/multas")
+//    public ResponseEntity<?> pagarMulta(@PathVariable String matricula) {
+//        vehicleService.pagarMulta(matricula, )
+//    }
 
 }
