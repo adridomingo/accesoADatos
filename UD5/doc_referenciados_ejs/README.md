@@ -230,7 +230,6 @@
 
 ####    18.- Calcular el progreso promedio de los estudiantes por curso
 
-
 ####    19.- Mostrar cursos con duración mayor a 50 horas con su instructor
 
 
