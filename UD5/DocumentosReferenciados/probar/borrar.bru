@@ -1,0 +1,23 @@
+meta {
+  name: borrar
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:8080/api2/autores/borrar/698c70e20fcf07e05f756bb2
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nacionalidad": "España",
+    "nombre": "PEDRO"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

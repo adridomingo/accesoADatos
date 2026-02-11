@@ -1,0 +1,20 @@
+meta {
+  name: buscarAutorNombre
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://localhost:8080/api2/libros/buscar/titulo-autores?titulo=Cien años de soledad
+  body: none
+  auth: inherit
+}
+
+params:query {
+  titulo: Cien años de soledad
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,23 @@
+meta {
+  name: actualizar
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/api2/autores/actualizar/698c70e20fcf07e05f756bb2
+  body: json
+  auth: inherit
+}
+
+body:json {
+    {
+      "nacionalidad": "España",
+      "nombre": "PEDRO"
+    }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
